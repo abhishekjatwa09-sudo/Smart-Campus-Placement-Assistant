@@ -179,7 +179,7 @@ Do not make unrealistic promises.
 
 
         const response = await fetch(
-            "http://localhost:5000/api/guidance",
+"https://smartprep-ai-backend-8t4g.onrender.com/api/guidance",
             {
                 method: "POST",
 
