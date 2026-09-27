@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aptitude Quiz | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Dashboard
+        </a>
+    </header>
+
+    <main class="quiz-container">
+
+        <div class="quiz-header">
+
+            <p class="small-title">APTITUDE QUIZ</p>
+
+            <h1>Quantitative Aptitude</h1>
+
+            <p>
+                Test your aptitude skills for placement preparation.
+            </p>
+
+        </div>
+
+        <div class="quiz-card">
+
+            <div class="quiz-info">
+                <span id="questionNumber">
+                    Question 1 of 5
+                </span>
+
+                <span id="score">
+                    Score: 0
+                </span>
+            </div>
+
+            <h2 id="question">
+                Loading question...
+            </h2>
+
+            <div id="options" class="options-container">
+            </div>
+
+            <button id="nextBtn" class="next-btn">
+                Next Question
+            </button>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="js/aptitude-quiz.js"></script>
+
+</body>
+
+</html>

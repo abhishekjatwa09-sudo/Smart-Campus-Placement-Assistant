@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Readiness | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <main class="performance-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="performance-header">
+
+            <p class="small-title">
+                PLACEMENT READINESS
+            </p>
+
+            <h1>
+                Your Placement Readiness 🎯
+            </h1>
+
+            <p>
+                Understand your current preparation level based on your
+                DSA and Aptitude performance.
+            </p>
+
+        </section>
+
+
+
+        <!-- MAIN READINESS CARD -->
+
+        <section class="readiness-card">
+
+
+            <div class="readiness-circle">
+
+                <span id="readinessScore">
+                    0%
+                </span>
+
+            </div>
+
+
+            <p class="small-title">
+                CURRENT READINESS
+            </p>
+
+
+            <h2 id="readinessLevel">
+                Calculating...
+            </h2>
+
+
+            <p id="readinessMessage">
+                Analyzing your performance...
+            </p>
+
+        </section>
+
+
+
+        <!-- SKILL SCORES -->
+
+        <section class="performance-cards">
+
+
+            <!-- DSA -->
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🧠
+                </div>
+
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        DSA PERFORMANCE
+                    </p>
+
+
+                    <h2 id="dsaScore">
+                        Loading...
+                    </h2>
+
+
+                    <p class="performance-description">
+                        Data Structures & Algorithms
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APTITUDE -->
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🔢
+                </div>
+
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        APTITUDE PERFORMANCE
+                    </p>
+
+
+                    <h2 id="aptitudeScore">
+                        Loading...
+                    </h2>
+
+
+                    <p class="performance-description">
+                        Quantitative & Logical Ability
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- OVERALL -->
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    📊
+                </div>
+
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        OVERALL READINESS
+                    </p>
+
+
+                    <h2 id="overallReadiness">
+                        Loading...
+                    </h2>
+
+
+                    <p class="performance-description">
+                        Combined preparation level
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- READINESS EXPLANATION -->
+
+        <section class="performance-summary">
+
+            <div class="summary-icon">
+                💡
+            </div>
+
+
+            <div class="summary-content">
+
+                <p class="small-title">
+                    WHAT THIS MEANS
+                </p>
+
+
+                <h2>
+                    Your Preparation Status
+                </h2>
+
+
+                <p id="readinessExplanation">
+                    Your readiness analysis will appear here
+                    after your quiz performance is calculated.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PREPARATION AREAS -->
+
+        <section class="performance-analysis">
+
+
+            <div class="analysis-header">
+
+                <p class="small-title">
+                    PREPARATION AREAS
+                </p>
+
+
+                <h2>
+                    What You Should Focus On
+                </h2>
+
+
+                <p>
+                    Use your current performance to identify where
+                    additional preparation may be useful.
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-progress-container">
+
+
+                <!-- DSA -->
+
+                <div class="skill-progress-item">
+
+                    <div class="skill-progress-header">
+
+                        <span>
+                            🧠 DSA
+                        </span>
+
+                        <span id="dsaReadinessText">
+                            --%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-progress-bar">
+
+                        <div
+                            id="dsaReadinessProgress"
+                            class="skill-progress-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- APTITUDE -->
+
+                <div class="skill-progress-item">
+
+                    <div class="skill-progress-header">
+
+                        <span>
+                            🔢 Aptitude
+                        </span>
+
+                        <span id="aptitudeReadinessText">
+                            --%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-progress-bar">
+
+                        <div
+                            id="aptitudeReadinessProgress"
+                            class="skill-progress-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ACTIONS -->
+
+        <section class="performance-next">
+
+            <div class="next-icon">
+                🚀
+            </div>
+
+
+            <div>
+
+                <p class="small-title">
+                    NEXT STEP
+                </p>
+
+
+                <h2>
+                    Improve Your Readiness
+                </h2>
+
+
+                <p>
+                    Practice your weaker areas and retake quizzes
+                    to track your improvement.
+                </p>
+
+            </div>
+
+
+            <div class="next-buttons">
+
+                <a href="dsa-quiz.html">
+                    Practice DSA
+                </a>
+
+
+                <a href="aptitude-quiz.html">
+                    Practice Aptitude
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script
+        type="module"
+        src="js/placement-readiness.js">
+    </script>
+
+</body>
+
+</html>

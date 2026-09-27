@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Performance | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+    <main class="performance-container">
+
+        <!-- PAGE HEADER -->
+        <section class="performance-header">
+
+            <p class="small-title">
+                PERFORMANCE ANALYTICS
+            </p>
+
+            <h1>
+                Your Performance 📊
+            </h1>
+
+            <p>
+                Analyze your quiz performance and track your placement
+                preparation progress.
+            </p>
+
+        </section>
+
+
+        <!-- MAIN SCORE CARDS -->
+        <section class="performance-cards">
+
+            <!-- DSA -->
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🧠
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        DSA PERFORMANCE
+                    </p>
+
+                    <h2 id="dsaScore">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Data Structures & Algorithms
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- APTITUDE -->
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🔢
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        APTITUDE PERFORMANCE
+                    </p>
+
+                    <h2 id="aptitudeScore">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Quantitative & Logical Ability
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OVERALL -->
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🎯
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        OVERALL PERFORMANCE
+                    </p>
+
+                    <h2 id="overallScore">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Combined preparation score
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFORMANCE SUMMARY -->
+        <section class="performance-summary">
+
+            <div class="summary-icon">
+                💡
+            </div>
+
+            <div class="summary-content">
+
+                <p class="small-title">
+                    PERFORMANCE INSIGHT
+                </p>
+
+                <h2>
+                    Your Performance Summary
+                </h2>
+
+                <p id="performanceMessage">
+                    Calculating your performance...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS ANALYSIS -->
+        <section class="performance-analysis">
+
+            <div class="analysis-header">
+
+                <div>
+
+                    <p class="small-title">
+                        PREPARATION ANALYSIS
+                    </p>
+
+                    <h2>
+                        Skill Progress
+                    </h2>
+
+                    <p>
+                        Understand how your current preparation is progressing.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-progress-container">
+
+                <!-- DSA PROGRESS -->
+                <div class="skill-progress-item">
+
+                    <div class="skill-progress-header">
+
+                        <span>
+                            🧠 DSA
+                        </span>
+
+                        <span id="dsaProgressText">
+                            --%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-progress-bar">
+
+                        <div
+                            id="dsaProgress"
+                            class="skill-progress-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- APTITUDE PROGRESS -->
+                <div class="skill-progress-item">
+
+                    <div class="skill-progress-header">
+
+                        <span>
+                            🔢 Aptitude
+                        </span>
+
+                        <span id="aptitudeProgressText">
+                            --%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-progress-bar">
+
+                        <div
+                            id="aptitudeProgress"
+                            class="skill-progress-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OVERALL PROGRESS -->
+                <div class="skill-progress-item">
+
+                    <div class="skill-progress-header">
+
+                        <span>
+                            🎯 Overall Readiness
+                        </span>
+
+                        <span id="overallProgressText">
+                            --%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-progress-bar">
+
+                        <div
+                            id="overallProgress"
+                            class="skill-progress-fill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT TO DO NEXT -->
+        <section class="performance-next">
+
+            <div class="next-icon">
+                🚀
+            </div>
+
+            <div>
+
+                <p class="small-title">
+                    NEXT STEP
+                </p>
+
+                <h2>
+                    Keep Improving
+                </h2>
+
+                <p>
+                    Use your performance and weak-topic analysis to decide
+                    what you should practice next.
+                </p>
+
+            </div>
+
+            <div class="next-buttons">
+
+                <a href="dsa-quiz.html">
+                    Practice DSA
+                </a>
+
+                <a href="aptitude-quiz.html">
+                    Practice Aptitude
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="js/performance.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Guidance | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+    <main class="guidance-container">
+
+
+        <!-- PAGE HEADER -->
+        <section class="performance-header">
+
+            <p class="small-title">
+                SMART GUIDANCE
+            </p>
+
+            <h1>
+                Your Personalized Guidance 🤖
+            </h1>
+
+            <p>
+                Get preparation recommendations based on your quiz
+                performance and weak areas.
+            </p>
+
+        </section>
+
+
+        <!-- MAIN AI GUIDANCE -->
+        <section class="guidance-card">
+
+            <div class="guidance-icon">
+                🤖
+            </div>
+
+            <p class="small-title">
+                SMART ANALYSIS
+            </p>
+
+            <h2 id="guidanceTitle">
+                Analyzing your performance...
+            </h2>
+
+            <p id="guidanceMessage">
+                Please wait while SmartPrep AI analyzes your quiz
+                performance.
+            </p>
+
+        </section>
+
+
+        <!-- PERFORMANCE OVERVIEW -->
+        <section class="guidance-grid">
+
+
+            <!-- DSA -->
+            <div class="guidance-item">
+
+                <div class="performance-icon">
+                    🧠
+                </div>
+
+                <p class="performance-label">
+                    DSA PERFORMANCE
+                </p>
+
+                <h2 id="dsaGuidance">
+                    Loading...
+                </h2>
+
+                <p>
+                    Data Structures & Algorithms
+                </p>
+
+            </div>
+
+
+            <!-- APTITUDE -->
+            <div class="guidance-item">
+
+                <div class="performance-icon">
+                    🔢
+                </div>
+
+                <p class="performance-label">
+                    APTITUDE PERFORMANCE
+                </p>
+
+                <h2 id="aptitudeGuidance">
+                    Loading...
+                </h2>
+
+                <p>
+                    Quantitative & Logical Ability
+                </p>
+
+            </div>
+
+
+            <!-- READINESS -->
+            <div class="guidance-item">
+
+                <div class="performance-icon">
+                    🎯
+                </div>
+
+                <p class="performance-label">
+                    PLACEMENT READINESS
+                </p>
+
+                <h2 id="readinessGuidance">
+                    Loading...
+                </h2>
+
+                <p>
+                    Current preparation level
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOCUS AREA -->
+        <section class="guidance-focus">
+
+            <div class="focus-icon">
+                ⚠️
+            </div>
+
+            <div>
+
+                <p class="small-title">
+                    FOCUS AREA
+                </p>
+
+                <h2>
+                    What should you practice?
+                </h2>
+
+                <p id="focusArea">
+                    Analyzing your weak areas...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- NEXT STEPS -->
+        <section class="guidance-next">
+
+            <div>
+
+                <p class="small-title">
+                    RECOMMENDED NEXT STEPS
+                </p>
+
+                <h2>
+                    Continue Your Preparation 🚀
+                </h2>
+
+                <p id="nextStep">
+                    Your recommended next step will appear here.
+                </p>
+
+            </div>
+
+
+            <div class="guidance-buttons">
+
+                <a href="dsa-quiz.html">
+                    Practice DSA
+                </a>
+
+                <a href="aptitude-quiz.html">
+                    Practice Aptitude
+                </a>
+
+                <a href="weak-topics.html">
+                    View Weak Topics
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script type="module" src="js/ai-guidance.js"></script>
+
+</body>
+
+</html>

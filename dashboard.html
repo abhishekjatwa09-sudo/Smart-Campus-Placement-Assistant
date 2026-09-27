@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <button id="logoutBtn">Logout</button>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome-section">
+
+            <p class="small-title">STUDENT DASHBOARD</p>
+
+            <h1>
+                Welcome, <span id="studentName">Student</span> 👋
+            </h1>
+
+            <p>
+                Track your placement preparation, identify weak areas
+                and improve your skills.
+            </p>
+
+        </section>
+
+
+        <!-- QUICK STATS -->
+        <section class="dashboard-stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🎯</div>
+
+                <div>
+                    <p>Placement Readiness</p>
+                    <h2 id="readinessStat">--%</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🧠</div>
+
+                <div>
+                    <p>DSA Performance</p>
+                    <h2 id="dsaStat">--</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🔢</div>
+
+                <div>
+                    <p>Aptitude Performance</p>
+                    <h2 id="aptitudeStat">--</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📈</div>
+
+                <div>
+                    <p>Preparation Status</p>
+                    <h2 id="statusStat">Starting</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN DASHBOARD CARDS -->
+        <section class="dashboard-cards">
+
+
+            <!-- DSA -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">🧠</div>
+
+                <h2>DSA Quiz</h2>
+
+                <p>
+                    Test your Data Structures and Algorithms
+                    knowledge and improve your problem-solving skills.
+                </p>
+
+                <button onclick="window.location.href='dsa-quiz.html'">
+                    Start Quiz
+                </button>
+
+            </div>
+
+
+            <!-- APTITUDE -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">🔢</div>
+
+                <h2>Aptitude Quiz</h2>
+
+                <p>
+                    Practice quantitative, logical and
+                    placement-oriented aptitude questions.
+                </p>
+
+                <button onclick="window.location.href='aptitude-quiz.html'">
+                    Start Quiz
+                </button>
+
+            </div>
+
+
+            <!-- PERFORMANCE -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">📊</div>
+
+                <h2>Performance</h2>
+
+                <p>
+                    Analyze your quiz scores and track your
+                    preparation progress.
+                </p>
+
+                <button onclick="window.location.href='performance.html'">
+                    View Performance
+                </button>
+
+            </div>
+
+
+            <!-- READINESS -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">🎯</div>
+
+                <h2>Placement Readiness</h2>
+
+                <p>
+                    Check your current preparation level using
+                    your quiz performance.
+                </p>
+
+                <button onclick="window.location.href='placement-readiness.html'">
+                    View Score
+                </button>
+
+            </div>
+
+
+            <!-- WEAK TOPICS -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">⚠️</div>
+
+                <h2>Weak Topics</h2>
+
+                <p>
+                    Identify areas where you need more practice
+                    and improve your preparation.
+                </p>
+
+                <button onclick="window.location.href='weak-topics.html'">
+                    View Topics
+                </button>
+
+            </div>
+
+
+            <!-- AI GUIDANCE -->
+            <div class="dashboard-card">
+
+                <div class="card-icon">🤖</div>
+
+                <h2>Smart Guidance</h2>
+
+                <p>
+                    Get personalized preparation guidance based
+                    on your performance.
+                </p>
+
+                <button onclick="window.location.href='ai-guidance.html'">
+                    Get Guidance
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PREPARATION OVERVIEW -->
+        <section class="dashboard-overview">
+
+            <div class="overview-header">
+
+                <p class="small-title">PREPARATION OVERVIEW</p>
+
+                <h2>Your Placement Journey</h2>
+
+                <p>
+                    Build your skills consistently and track your
+                    progress through SmartPrep.
+                </p>
+
+            </div>
+
+
+            <div class="progress-box">
+
+                <div class="progress-item">
+
+                    <div class="progress-label">
+                        <span>DSA</span>
+                        <span id="dsaProgressText">--%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="dsaProgress" class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-label">
+                        <span>Aptitude</span>
+                        <span id="aptitudeProgressText">--%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="aptitudeProgress" class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-item">
+
+                    <div class="progress-label">
+                        <span>Overall Readiness</span>
+                        <span id="overallProgressText">--%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div id="overallProgress" class="progress-fill"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RECENT ACTIVITY -->
+<section class="recent-activity">
+
+    <div class="activity-header">
+
+        <div>
+            <p class="small-title">RECENT ACTIVITY</p>
+
+            <h2>Your Recent Quiz Attempts</h2>
+
+            <p>
+                Keep track of your latest placement preparation activities.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="recentActivityList" class="activity-list">
+
+        <div class="activity-loading">
+            Loading recent activity...
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- QUICK ACTIONS -->
+        <section class="quick-actions">
+
+            <div>
+
+                <p class="small-title">QUICK ACTIONS</p>
+
+                <h2>Continue Your Preparation</h2>
+
+            </div>
+
+
+            <div class="quick-action-buttons">
+
+                <button onclick="window.location.href='dsa-quiz.html'">
+                    🧠 Practice DSA
+                </button>
+
+                <button onclick="window.location.href='aptitude-quiz.html'">
+                    🔢 Practice Aptitude
+                </button>
+
+                <button onclick="window.location.href='ai-guidance.html'">
+                    🤖 Get Guidance
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel | SmartPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <span>S</span>
+            Smart<span>Prep</span>
+        </div>
+
+        <a href="dashboard.html" class="back-btn">
+            ← Dashboard
+        </a>
+
+    </header>
+
+
+
+    <main class="admin-container">
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="performance-header">
+
+            <p class="small-title">
+                ADMIN PANEL
+            </p>
+
+            <h1>
+                SmartPrep Admin Dashboard
+            </h1>
+
+            <p>
+                Monitor student quiz activity and performance.
+            </p>
+
+        </section>
+
+
+
+        <!-- STATISTICS -->
+
+        <section class="performance-cards">
+
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    👥
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        TOTAL STUDENTS
+                    </p>
+
+                    <h2 id="totalStudents">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Registered students
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    📝
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        QUIZ ATTEMPTS
+                    </p>
+
+                    <h2 id="totalAttempts">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Total submitted quizzes
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🧠
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        DSA ATTEMPTS
+                    </p>
+
+                    <h2 id="dsaAttempts">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        DSA quiz submissions
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="performance-card">
+
+                <div class="performance-icon">
+                    🔢
+                </div>
+
+                <div class="performance-card-content">
+
+                    <p class="performance-label">
+                        APTITUDE ATTEMPTS
+                    </p>
+
+                    <h2 id="aptitudeAttempts">
+                        Loading...
+                    </h2>
+
+                    <p class="performance-description">
+                        Aptitude quiz submissions
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RECENT RESULTS -->
+
+        <section class="admin-table-section">
+
+
+            <div class="admin-section-header">
+
+                <div>
+
+                    <p class="small-title">
+                        STUDENT ACTIVITY
+                    </p>
+
+                    <h2>
+                        Recent Quiz Results
+                    </h2>
+
+                    <p>
+                        View the latest quiz attempts submitted by students.
+                    </p>
+
+                </div>
+
+
+                <button id="refreshAdminBtn">
+                    🔄 Refresh
+                </button>
+
+            </div>
+
+
+
+            <!-- SEARCH -->
+
+            <div class="admin-search">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="Search by student name or quiz type..."
+                >
+
+            </div>
+
+
+
+            <!-- TABLE -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Student
+                            </th>
+
+                            <th>
+                                Quiz
+                            </th>
+
+                            <th>
+                                Score
+                            </th>
+
+                            <th>
+                                Percentage
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="resultsTable">
+
+                        <tr>
+
+                            <td colspan="5">
+                                Loading results...
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ADMIN NOTE -->
+
+        <section class="admin-note">
+
+            <div class="admin-note-icon">
+                🔐
+            </div>
+
+            <div>
+
+                <p class="small-title">
+                    ADMIN INFORMATION
+                </p>
+
+                <h2>
+                    Student Performance Monitoring
+                </h2>
+
+                <p>
+                    This panel displays quiz data stored in SmartPrep's
+                    Firestore database for monitoring and analysis.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script
+        type="module"
+        src="js/admin.js">
+    </script>
+
+</body>
+
+</html>
